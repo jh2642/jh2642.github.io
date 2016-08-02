@@ -1,0 +1,56 @@
+* {
+  font-family: 'Righteous', cursive;
+}
+
+.jumbotron {
+  font-size: 120px;
+}
+
+.randomColor {
+  background-color: #fff;
+  animation: random 15s infinite;
+}
+
+@keyframes random {
+  15% {
+    background-color: #df815e;
+  }
+  30% {
+    background-color: #828282;
+  }
+  45% {
+    background-color: #eb8cda;
+  }
+  60% {
+    background-color: #7b71d9;
+  }
+  75% {
+    background-color: #8eb4e0;
+  }
+}
+
+.mainContainer {
+  columns: 4;
+}
+
+.photograph {
+  display: inline-block;
+}
+
+@media screen and (max-width: 325px) {
+  .mainContainer {
+    columns: 1;
+  }
+}
+
+@media screen and (min-width: 325px) and (max-width: 450px) {
+  .mainContainer {
+    columns: 2;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1000px) {
+  .mainContainer {
+    columns: 3;
+  }
+}

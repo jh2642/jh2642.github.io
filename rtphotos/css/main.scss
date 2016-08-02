@@ -1,0 +1,44 @@
+* {
+  font-family: 'Righteous', cursive;
+}
+
+.jumbotron {
+    font-size: 120px;
+}
+
+.randomColor {
+     background-color: #fff;
+     animation: random 15s infinite;
+
+    @keyframes  random {
+        15% { background-color: rgb(223, 129, 94); }
+        30% { background-color: rgb(130, 130, 130); }
+        45% { background-color: rgb(235, 140, 218); }
+        60% { background-color: rgb(123, 113, 217); }
+        75% { background-color: rgb(142, 180, 224); }
+    }
+}
+
+.mainContainer {
+    columns: 4;
+}
+
+.photograph {
+     display: inline-block;
+}
+
+@media screen and (max-width: 325px) {
+    .mainContainer {
+        columns: 1;
+    }
+}
+@media screen and (min-width: 325px) and (max-width: 450px) {
+    .mainContainer {
+        columns: 2;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 1000px) {
+    .mainContainer {
+        columns: 3;
+    }
+}
