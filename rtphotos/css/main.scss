@@ -3,7 +3,7 @@
 }
 
 .jumbotron {
-    font-size: 120px;
+    font-size: 60px;
 }
 
 .randomColor {
@@ -20,21 +20,13 @@
 }
 
 .mainContainer {
-    columns: 4;
+    columns: 1;
 }
 
 .photograph {
      display: inline-block;
 }
 
-@media screen and (max-width: 325px) {
-    .jumbotron {
-        font-size: 60px;
-    }
-    .mainContainer {
-        columns: 1;
-    }
-}
 @media screen and (min-width: 325px) and (max-width: 450px) {
     .jumbotron {
         font-size: 60px;
@@ -44,7 +36,18 @@
     }
 }
 @media screen and (min-width: 450px) and (max-width: 1000px) {
+    .jumbotron {
+        font-size: 120px;
+    }
     .mainContainer {
         columns: 3;
+    }
+}
+@media screen and (min-width: 1001px) {
+    .jumbotron {
+        font-size: 120px;
+    }
+    .mainContainer {
+        columns: 4;
     }
 }
